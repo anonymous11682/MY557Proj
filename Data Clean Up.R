@@ -49,5 +49,5 @@ CLOSERg <- CLOSERg[which((CLOSERg$a == "Work23" & CLOSERg$c == "Mal23") | (CLOSE
 row.names(CLOSERg) <- NULL
 CLOSERg <- add_column(CLOSERg, t = rep(c(0,1), max(CLOSERg$id)), .after = "id")
 
-write.table(CLOSERg, "C:/Users/zalli/Desktop/PhD Master File/Code Files/CLOSERg.txt",
+write.table(CLOSERg, "INSERT FILE PATH/CLOSERg.txt",
             quote=FALSE, row.names = FALSE)
